@@ -1,0 +1,32 @@
+"" Configs
+set cursorcolumn
+set cursorline
+set colorcolumn=150
+set showcmd
+set nowrap
+set autoindent
+set smartindent
+set shiftwidth=2
+set autowrite
+set eb
+set tabstop=2
+set expandtab
+set encoding=utf8
+set showmatch
+set ignorecase
+set incsearch
+set hlsearch
+
+"" Maps
+nnoremap qq   :q<CR>
+nnoremap qq   :q!<CR>
+nnoremap qqq  :qa!<CR>
+nnoremap ;    :w<CR>
+nnoremap ;;   :wa<CR>
+nnoremap //   :!docker exec -ti back source /ws/helper && agregador<CR>
+nnoremap ]]   :source %<CR>
+nnoremap cp   :let @" = expand('%:p')<CR>
+nnoremap fzf  :FZF<CR>
+
+"" Commands
+
