@@ -76,7 +76,7 @@ Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'tomasr/molokai'
-Plug 'joshdick/onedark.vim'
+
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
@@ -167,7 +167,7 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
-  colorscheme onedark
+  colorscheme molokai
 endif
 
 set mousemodel=popup
@@ -467,10 +467,10 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 let g:javascript_enable_domhtmlcss = 1
 
 " vim-javascript
-" augroup vimrc-javascript
-"   autocmd!
-"   autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab softtabstop=4
-" augroup END
+augroup vimrc-javascript
+  autocmd!
+  autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab softtabstop=4
+augroup END
 
 
 "*****************************************************************************

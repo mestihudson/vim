@@ -1,1 +1,2 @@
 Plug 'posva/vim-vue'
+Plug 'joshdick/onedark.vim'
