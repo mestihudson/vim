@@ -5,7 +5,7 @@ augroup vimrc-javascript
 augroup END
 
 if !exists('g:not_finish_vimplug')
-  colorscheme molokai
+  colorscheme onedark
 endif
 
 set cursorcolumn
