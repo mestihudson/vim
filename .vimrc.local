@@ -2,6 +2,8 @@
 set cursorcolumn
 set cursorline
 set colorcolumn=150
+hi cursorline cterm=none ctermbg=darkblue ctermfg=white
+hi cursorcolumn cterm=none ctermbg=darkblue ctermfg=white
 set showcmd
 set nowrap
 set autoindent
@@ -23,10 +25,12 @@ nnoremap qq   :q!<CR>
 nnoremap qqq  :qa!<CR>
 nnoremap ;    :w<CR>
 nnoremap ;;   :wa<CR>
-nnoremap //   :!docker exec -ti back source /ws/helper && agregador<CR>
-nnoremap ]]   :source %<CR>
+nnoremap ,src :source %<CR>
 nnoremap cp   :let @" = expand('%:p')<CR>
-nnoremap fzf  :FZF<CR>
 
 "" Commands
 
+let g:session_autoload = "yes"
+let g:session_autosave = "yes"
+let g:indent_guides_start_level=2
+let g:indent_guides_enable_on_vim_startup = 1
