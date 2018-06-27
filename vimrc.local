@@ -11,8 +11,8 @@ endif
 set cursorcolumn
 set cursorline
 set colorcolumn=150
-" hi cursorline cterm=none ctermbg=darkblue ctermfg=white
-" hi cursorcolumn cterm=none ctermbg=darkblue ctermfg=white
+hi cursorline cterm=none ctermbg=darkblue ctermfg=white
+hi cursorcolumn cterm=none ctermbg=darkblue ctermfg=white
 set showcmd
 set nowrap
 set autoindent
@@ -36,10 +36,9 @@ nnoremap ;    :w<CR>
 nnoremap ;;   :wa<CR>
 nnoremap ,src :source %<CR>
 nnoremap cp   :let @" = expand('%:p')<CR>
+nnoremap ,r   :GFiles<CR>
 
 "" Commands
 
 let g:session_autoload = "yes"
 let g:session_autosave = "yes"
-" let g:indent_guides_start_level=2
-" let g:indent_guides_enable_on_vim_startup = 1
