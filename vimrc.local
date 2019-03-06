@@ -10,11 +10,13 @@ endif
 
 set cursorcolumn
 set cursorline
-set colorcolumn=150
+set colorcolumn=80
+set textwidth=80
+set wrapmargin=2
 hi cursorline cterm=none ctermbg=darkblue ctermfg=white
 hi cursorcolumn cterm=none ctermbg=darkblue ctermfg=white
 set showcmd
-set nowrap
+set wrap
 set autoindent
 set smartindent
 set shiftwidth=2
@@ -39,6 +41,7 @@ nnoremap ;;   :wa<CR>
 nnoremap ,src :source %<CR>
 nnoremap cp   :let @" = expand('%:p')<CR>
 nnoremap ,r   :GFiles<CR>
+nnoremap ,,r  :!docker-compose exec e2e /bin/sh -c 'npm run cleanup && BASE_URL="http://172.20.1.4:4400/" npm run cucumber'<CR>
 
 "" Commands
 
