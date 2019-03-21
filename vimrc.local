@@ -4,10 +4,6 @@ augroup vimrc-javascript
   autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
 augroup END
 
-if !exists('g:not_finish_vimplug')
-  colorscheme onedark
-endif
-
 set cursorcolumn
 set cursorline
 set colorcolumn=80
@@ -36,8 +32,8 @@ set paste
 nnoremap qq   :q<CR>
 nnoremap qq   :q!<CR>
 nnoremap qqq  :qa!<CR>
-nnoremap ;    :w<CR>
-nnoremap ;;   :wa<CR>
+nnoremap ;;   :w<CR>
+nnoremap ;;;  :wa<CR>
 nnoremap ,src :source %<CR>
 nnoremap cp   :let @" = expand('%:p')<CR>
 nnoremap ,r   :GFiles<CR>
