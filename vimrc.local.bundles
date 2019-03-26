@@ -1,5 +1,6 @@
 Plug 'posva/vim-vue'
 Plug 'valloric/youcompleteme'
+Plug 'scrooloose/nerdcommenter'
 
 """" Themes/Color Scheme : BEGIN
 
@@ -18,11 +19,11 @@ Plug 'ntk148v/vim-horizon'
 Plug 'wmvanvliet/vim-blackboard'
 Plug 'lifepillar/vim-solarized8'
 Plug 'connorholyday/vim-snazzy'
-Plug 'tomasr/molokai'
+:lug 'tomasr/molokai'
+Plug 'dikiaap/minimalist'
 
 if !exists('g:not_finish_vimplug')
-  set background=dark
-  colorscheme horizon
+  colorscheme onedark
 endif
 
 """" Themes/Color Scheme : END

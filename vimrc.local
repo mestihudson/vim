@@ -1,8 +1,15 @@
 "" Configs
 augroup vimrc-javascript
   autocmd!
-  autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
+  autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 augroup END
+
+autocmd FileType vue syntax sync fromstart
+
+if !exists('g:not_finish_vimplug')
+  set background=dark
+  colorscheme onedark
+endif
 
 set cursorcolumn
 set cursorline
@@ -13,13 +20,14 @@ hi cursorline cterm=none ctermbg=darkblue ctermfg=white
 hi cursorcolumn cterm=none ctermbg=darkblue ctermfg=white
 set showcmd
 set wrap
-set autoindent
-set smartindent
-set shiftwidth=2
 set autowrite
 set eb
 set tabstop=2
+" set softtabstop=2
 set expandtab
+set shiftwidth=2
+set autoindent
+set smartindent
 set encoding=utf8
 set showmatch
 set ignorecase
@@ -27,17 +35,26 @@ set incsearch
 set hlsearch
 set relativenumber
 set paste
+highlight TrailSpaces ctermbg=red guibg=red
+match TrailSpaces /\s\+$/
+highlight LineNr ctermfg=yellow
 
 "" Maps
 nnoremap qq   :q<CR>
-nnoremap qq   :q!<CR>
-nnoremap qqq  :qa!<CR>
+nnoremap qqq  :q!<CR>
 nnoremap ;;   :w<CR>
 nnoremap ;;;  :wa<CR>
 nnoremap ,src :source %<CR>
-nnoremap cp   :let @" = expand('%:p')<CR>
+nnoremap ,cp  :let @" = expand('%:p')<CR>
 nnoremap ,r   :GFiles<CR>
-nnoremap ,,r  :!docker-compose exec e2e /bin/sh -c 'npm run cleanup && BASE_URL="http://172.20.1.4:4400/" npm run cucumber'<CR>
+nnoremap ,rt  :%s/\t/  /g<CR>
+nnoremap ,p   :PlugInstall<CR>
+nnoremap ,gs  :!git status<CR>
+nnoremap ,gss :!git status --short<CR>
+nnoremap ,gaa :!git add --all<CR>
+nnoremap ,gca :!git commit --amend --no-edit<CR>
+nnoremap ,gp  :!git push<CR>
+nnoremap ,gl  :!git log<CR>
 
 "" Commands
 
