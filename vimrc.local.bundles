@@ -1,29 +1,29 @@
-Plug 'posva/vim-vue'
-Plug 'valloric/youcompleteme'
-Plug 'scrooloose/nerdcommenter'
+" Plug 'posva/vim-vue'
+" Plug 'valloric/youcompleteme'
+" Plug 'scrooloose/nerdcommenter'
 
-"""" Themes/Color Scheme : BEGIN
+" """" Themes/Color Scheme : BEGIN
 
-"" Instalação
-"" 1. adicionar o caminho do repositório no formato <usuário>/<repositorio>
-"" 2. alterar o colorscheme para o nome do mesmo descrito na página do autor
-""    por exemplo 'joshdick/onedark.vim' => onedark
-"" 3. salvar a alteração
-"" 4. executar o comando :source %
-"" 5. em seguida o comando :PlugInstall
-"" 6. e finalmente executar novamente o comando :source %
+" "" Instalação
+" "" 1. adicionar o caminho do repositório no formato <usuário>/<repositorio>
+" "" 2. alterar o colorscheme para o nome do mesmo descrito na página do autor
+" ""    por exemplo 'joshdick/onedark.vim' => onedark
+" "" 3. salvar a alteração
+" "" 4. executar o comando :source %
+" "" 5. em seguida o comando :PlugInstall
+" "" 6. e finalmente executar novamente o comando :source %
 
-Plug 'joshdick/onedark.vim'
-Plug 'benburrill/potato-colors'
-Plug 'ntk148v/vim-horizon'
-Plug 'wmvanvliet/vim-blackboard'
-Plug 'lifepillar/vim-solarized8'
-Plug 'connorholyday/vim-snazzy'
-:lug 'tomasr/molokai'
-Plug 'dikiaap/minimalist'
+" Plug 'joshdick/onedark.vim'
+" Plug 'benburrill/potato-colors'
+" Plug 'ntk148v/vim-horizon'
+" Plug 'wmvanvliet/vim-blackboard'
+" Plug 'lifepillar/vim-solarized8'
+" Plug 'connorholyday/vim-snazzy'
+" Plug 'tomasr/molokai'
+" Plug 'dikiaap/minimalist'
 
-if !exists('g:not_finish_vimplug')
-  colorscheme onedark
-endif
+" if !exists('g:not_finish_vimplug')
+"   colorscheme onedark
+" endif
 
 """" Themes/Color Scheme : END

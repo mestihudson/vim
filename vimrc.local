@@ -1,15 +1,11 @@
 "" Configs
-augroup vimrc-javascript
-  autocmd!
-  autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
-augroup END
+" augroup vimrc-javascript
+"   autocmd!
+" 	autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+" augroup END
 
-autocmd FileType vue syntax sync fromstart
-
-if !exists('g:not_finish_vimplug')
-  set background=dark
-  colorscheme onedark
-endif
+" " autocmd FileType vue syntax sync fromstart
+" " autocmd BufRead,BufNowFile vue setfiletype pug
 
 set cursorcolumn
 set cursorline
@@ -57,6 +53,5 @@ nnoremap ,gp  :!git push<CR>
 nnoremap ,gl  :!git log<CR>
 
 "" Commands
-
 let g:session_autoload = "yes"
 let g:session_autosave = "yes"
