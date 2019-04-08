@@ -1,10 +1,10 @@
 "" Configs
-" augroup vimrc-javascript
-"   autocmd!
-" 	autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
-" augroup END
+augroup vimrc-javascript
+  autocmd!
+  autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+augroup END
 
-" " autocmd FileType vue syntax sync fromstart
+autocmd FileType vue syntax sync fromstart
 " " autocmd BufRead,BufNowFile vue setfiletype pug
 
 set cursorcolumn
