@@ -1,5 +1,3 @@
-[include]
-  path = ~/.gitconfig.user
 [alias]
 	ch  = checkout
 	chb = !git ch -b
@@ -25,3 +23,5 @@
 	tool = vimdiff
 [core]
 	editor = vim
+[include]
+	path = ~/.gitconfig.user
