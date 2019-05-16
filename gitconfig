@@ -10,13 +10,15 @@
 	can = !git ci --amend --no-edit
 	st  = status
 	sts = !git st --short
+  stu = !git sts --untracked-files
 	ss  = !git sts
-	lno = !git log --name-only
-	lns = !git log --name-status
+  lg  = log --name-status
+  lgs = !git lg
+	lgn = log --name-only
 	cl  = clean
 	cla = !git cl -dfx
 	rt  = reset
-	rth = !git reset --hard HEAD
+  rth = !git rt --hard
 [diff]
 	tool = vimdiff
 [merge]

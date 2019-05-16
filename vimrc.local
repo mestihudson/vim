@@ -4,9 +4,15 @@ augroup vimrc-javascript
   autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 augroup END
 
+augroup vimrc-java
+  autocmd!
+  autocmd FileType java set ts=2|set sw=2|set et|set sts=0|set autoindent|set smarttab
+augroup END
+
 autocmd FileType vue syntax sync fromstart
 " " autocmd BufRead,BufNowFile vue setfiletype pug
 
+set foldmethod=indent
 set cursorcolumn
 set cursorline
 set colorcolumn=80
@@ -19,7 +25,7 @@ set wrap
 set autowrite
 set eb
 set tabstop=2
-" set softtabstop=2
+set softtabstop=2
 set expandtab
 set shiftwidth=2
 set autoindent
@@ -36,21 +42,22 @@ match TrailSpaces /\s\+$/
 highlight LineNr ctermfg=yellow
 
 "" Maps
-nnoremap qq   :q<CR>
-nnoremap qqq  :q!<CR>
-nnoremap ;;   :w<CR>
-nnoremap ;;;  :wa<CR>
-nnoremap ,src :source %<CR>
-nnoremap ,cp  :let @" = expand('%:p')<CR>
-nnoremap ,r   :GFiles<CR>
-nnoremap ,rt  :%s/\t/  /g<CR>
-nnoremap ,p   :PlugInstall<CR>
-nnoremap ,gs  :!git status<CR>
-nnoremap ,gss :!git status --short<CR>
-nnoremap ,gaa :!git add --all<CR>
-nnoremap ,gca :!git commit --amend --no-edit<CR>
-nnoremap ,gp  :!git push<CR>
-nnoremap ,gl  :!git log<CR>
+nnoremap qq       :q<CR>
+nnoremap qqq      :q!<CR>
+nnoremap ;;       :w<CR>
+nnoremap ;;;      :wa<CR>
+nnoremap ,src     :source ~/.vimrc<CR>
+nnoremap ,cp      :let @" = expand('%:p')<CR>
+nnoremap ,r       :GFiles<CR>
+nnoremap ,rt      :%s/\t/  /g<CR>
+nnoremap ,p       :PlugInstall<CR>
+nnoremap ,gs      :!git status<CR>
+nnoremap ,gss     :!git status --short<CR>
+nnoremap ,gaa     :!git add --all<CR>
+nnoremap ,gca     :!git commit --amend --no-edit<CR>
+nnoremap ,gp      :!git push<CR>
+nnoremap ,gl      :!git log<CR>
+nnoremap <T><T>   ,rt
 
 "" Commands
 let g:session_autoload = "yes"
