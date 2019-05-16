@@ -1,7 +1,9 @@
 Plug 'johngrib/vim-game-code-break'
-" Plug 'posva/vim-vue'
+Plug 'posva/vim-vue'
+Plug 'digitaltoad/vim-pug'
+Plug 'tpope/vim-obsession'
 " Plug 'valloric/youcompleteme'
-" Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " """" Themes/Color Scheme : BEGIN
 
