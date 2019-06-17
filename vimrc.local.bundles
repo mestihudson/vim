@@ -4,6 +4,8 @@ Plug 'digitaltoad/vim-pug'
 Plug 'tpope/vim-obsession'
 " Plug 'valloric/youcompleteme'
 Plug 'scrooloose/nerdcommenter'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'wakatime/vim-wakatime'
 
 " """" Themes/Color Scheme : BEGIN
 

@@ -48,6 +48,7 @@ nnoremap ;;       :w<CR>
 nnoremap ;;;      :wa<CR>
 nnoremap ,src     :source ~/.vimrc<CR>
 nnoremap ,cp      :let @" = expand('%:p')<CR>
+nnoremap ,sa      :saveas expand('%:p')
 nnoremap ,r       :GFiles<CR>
 nnoremap ,rt      :%s/\t/  /g<CR>
 nnoremap ,p       :PlugInstall<CR>
