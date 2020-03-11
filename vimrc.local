@@ -58,7 +58,13 @@ nnoremap ,gaa     :!git add --all<CR>
 nnoremap ,gca     :!git commit --amend --no-edit<CR>
 nnoremap ,gp      :!git push<CR>
 nnoremap ,gl      :!git log<CR>
-nnoremap <T><T>   ,rt
+nnoremap <T><T>   ,rt<CR>
+nnoremap ,lc      :lclose<CR>
+nnoremap ,lo      :lopen<CR>
+nnoremap ,a       :SyntasticReset<CR>
+nnoremap ,qc      :cclose<CR>
+nnoremap ,qo      :copen<CR>
+nnoremap mm       :NERDTreeToggle<CR>
 
 "" Commands
 let g:session_autoload = "yes"
